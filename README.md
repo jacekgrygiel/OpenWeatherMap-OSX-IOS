@@ -19,14 +19,25 @@ At least you need to select which version you want and download appropriate fram
 
 Framework provides few different requests and responses, all in details you can find in documentation. Simply it :
 
-* Initialization APIService with needed information:
+* Initialization OWMAPIService with needed information:
 
 ```objective-c
     Language *language = [[Language alloc] initWithLanguageType:LanguagePolish];
-    [[APIService sharedInstance] setApiLanguage:language];
-    [[APIService sharedInstance] setHostApiPath: @"http://api.openweathermap.org/data/2.5"];
-    [[APIService sharedInstance] setAppId: @"API_KEY"];// you should go to openweathermap.org page and create account with plan 
-    [[APIService sharedInstance] setUnitType:@"metric"];//imperial
+    [[OWMAPIService sharedInstance] setApiLanguage:language];
+    [[OWMAPIService sharedInstance] setHostApiPath: @"http://api.openweathermap.org/data/2.5"];
+    [[OWMAPIService sharedInstance] setAppId: @"API_KEY"];// you should go to openweathermap.org page and create account with plan 
+    [[OWMAPIService sharedInstance] setUnitType:@"metric"];//imperial
 ```
 
-*
+* Search weather for city by name:
+
+```objective-c
+
+    [[OWMAPIService sharedInstance] searchWeatherCityByName:@"London" withCompletion:^(id sourceData, id model, NSError *error) {
+        
+        OWMCityWeather *cityWeather = (OWMCityWeather*) model;
+        
+        
+    }];
+```
+* Search cities by coordinats

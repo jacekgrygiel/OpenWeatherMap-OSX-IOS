@@ -15,7 +15,7 @@ At least you need to select which version you want and download appropriate fram
 * [OpenWeatherMap-OSX](https://github.com/jacekgrygiel/OpenWeatherMap-OSX-IOS/tree/master/OpenWeatherFramework/IOS)
 * [OpenWeatherMap-IOS](https://github.com/jacekgrygiel/OpenWeatherMap-OSX-IOS/tree/master/OpenWeatherFramework/OSX)
 
-* [Documentation](https://github.com/jacekgrygiel/OpenWeatherMap-OSX-IOS/tree/master/OpenWeatherFramework/Documentation/html/index.html)
+* [Documentation](https://github.com/jacekgrygiel/OpenWeatherMap-OSX-IOS/tree/master/OpenWeatherFramework/Documentation/html)
 
 #How to use it#
 

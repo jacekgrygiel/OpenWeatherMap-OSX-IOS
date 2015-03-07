@@ -17,13 +17,13 @@
 #define kAPIBox @"box"
 
 
-typedef void(^CompletionBlockWithObject)(id sourceData, id model, NSError*);
+typedef void(^CompletionBlockWithObject)(id sourceData, id model, NSError* error);
 
 @interface OWMAPIService : NSObject
 
 + (id) sharedInstance;
 
-
+ 
 /**
  *  Request for weather by city name
  *
